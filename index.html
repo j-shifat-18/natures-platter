@@ -12,25 +12,81 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
 
-    <!-- Tailwindcss + Daisy Ui CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
-    <!-- Custom tailwind class -->
-    <style type="text/tailwindcss">
-        @theme {
-          /* --color-clifford: #da373d; */
-        }
-    </style>
-
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/8a3ac4f4c1.js" crossorigin="anonymous"></script>
 
+    <!-- Tailwindcss + Daisy Ui CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom tailwind class -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'nature-primary': '#179800',
+                        'nature-secondary': '#EFEBE3',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-poppins {
+            font-family: "Poppins", serif;
+        }
+
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+
+
 </head>
 
-<body>
+<body class="font-sora">
     <!-- Header section -->
-    <header>
+    <header class="mb-24 bg-gradient-to-t from-[#EFEBE3] to-transparent">
+        <!-- Navbar -->
+        <div class="navbar py-3 px-11 lg:py-6 lg:px-32 mx-auto border-b-2 border-nature-primary lg:border-none">
+            <div class="navbar-start">
+                <a class="hidden lg:flex"><img src="./images/logo-header.png" alt=""></a>
+                <a class="flex lg:hidden"><img src="./images/Group.png" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-4">
+                <button class="hidden lg:flex h-[45px] btn bg-transparent border-none shadow-none text-black"><i class="fa-solid fa-magnifying-glass"></i></i></button>
+                <button class="hidden lg:flex h-[45px] btn bg-transparent border-none shadow-none text-black"><i class="fa-solid fa-cart-shopping "></i></button>
+                <button class="hidden lg:flex h-[45px] py-3 px-8 btn border-nature-primary border-2">Login</button>
+                <button class="hidden lg:flex h-[45px] py-3 px-8 btn bg-nature-primary text-white">Register</button>
+
+                <div class="dropdown dropdown-left">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-nature" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-40 lg:w-52 p-2 bg-nature-secondary">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </header>
 
@@ -38,7 +94,7 @@
     <main>
 
     </main>
-    
+
     <!-- Footer section -->
     <footer>
 
