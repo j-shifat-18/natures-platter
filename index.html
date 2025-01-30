@@ -29,6 +29,7 @@
                         clifford: '#da373d',
                         'nature-primary': '#179800',
                         'nature-secondary': '#EFEBE3',
+                        'nature-text':'#111111',
                     }
                 }
             }
@@ -48,7 +49,7 @@
 
 </head>
 
-<body class="font-sora max-w-[1600px] mx-auto">
+<body class="font-sora max-w-[1600px] mx-auto text-nature-text">
     <!-- Header section -->
     <header class="mb-24 bg-gradient-to-t from-[#EFEBE3] to-transparent">
         <!-- Navbar -->
@@ -90,10 +91,10 @@
         <!-- Banner section -->
          <section>
             <div class="flex flex-col justify-center items-center gap-6 lg:gap-8">
-                <h1 class="text-center text-3xl md:text-6xl font-semibold lg:w-1/2">Freshness <span class="text-nature-primary">You Can</span> <br>
+                <h1 class="text-center text-3xl md:text-6xl font-semibold w-11/12 lg:w-1/2">Freshness <span class="text-nature-primary">You Can</span> <br>
                     <span class="text-nature-primary">Count</span> On, Prices You’ll Love!
                 </h1>
-                <p class="text-center text-xl text-[#111111]/80 lg:w-1/2">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                <p class="text-center text-xl text-[#111111]/80 w-11/12 lg:w-1/2">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
                 </p>
                 <img src="./images/hero-vegetables.png" alt="">
             </div>
@@ -103,7 +104,58 @@
 
     <!-- Main section -->
     <main>
-
+        <!-- Service section -->
+         <section class="mb-24 w-11/12 lg:w-4/5 mx-auto">
+            <h2 class="text-3xl lg:text-4xl text-nature-primary font-semibold mb-6 lg:mb-12">Services</h2>
+            <!-- cards -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- card 1 -->
+                <div class="card bg-nature-secondary px-8 pb-10">
+                    <figure class="pt-8">
+                      <img
+                        src="./images/service.png"
+                        alt="Shoes"
+                        class="p-5 bg-white rounded-full" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="text-xl md:text-2xl font-semibold">24/7 Services</h2>
+                      <p class="text-[#111111]/70">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                      </p>
+                    </div>
+                  </div>
+                <!-- card 2 -->
+                <div class="card bg-nature-secondary px-8 pb-10">
+                    <figure class="pt-8">
+                      <img
+                        src="./images/delivery.png"
+                        alt="Shoes"
+                        class="p-5 bg-white rounded-full" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="text-xl md:text-2xl font-semibold">Fast Delivery</h2>
+                      <p class="text-[#111111]/70">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                      </p>
+                    </div>
+                  </div>
+                <!-- card 3 -->
+                <div class="card bg-nature-secondary px-8 pb-10">
+                    <figure class="pt-8">
+                      <img
+                        src="./images/healthy.png"
+                        alt="Shoes"
+                        class="p-5 bg-white rounded-full" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="text-xl md:text-2xl font-semibold">Healthy Products </h2>
+                      <p class="text-[#111111]/70">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                      </p>
+                    </div>
+                  </div>
+            </div>
+         </section>
     </main>
 
     <!-- Footer section -->
