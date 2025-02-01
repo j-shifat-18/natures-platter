@@ -36,6 +36,9 @@
         }
     </script>
 
+
+    <!-- Css Styles -->
+
     <style>
         .font-poppins {
             font-family: "Poppins", serif;
@@ -43,6 +46,51 @@
 
         .font-sora {
             font-family: "Sora", serif;
+        }
+
+
+        /* animation */
+        .container {
+            
+            display: inline-flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .typed-out {
+            display: inline-block;
+            overflow: hidden;
+            border-right: .15em solid orange;
+            white-space: nowrap;
+            font-size: inherit;
+            line-height: inherit;
+            animation: typing 3s steps(25,end) alternate infinite, blinking .8s infinite;
+            width: 0;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+
+            60% {
+                width: 100%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes blinking {
+            from {
+                border-color: transparent;
+            }
+
+            to {
+                border-color: orange;
+            }
         }
     </style>
 
@@ -71,7 +119,8 @@
                         class="fa-solid fa-magnifying-glass"></i></i></button>
                 <button class="hidden lg:flex h-[45px] btn bg-transparent border-none shadow-none text-black"><i
                         class="fa-solid fa-cart-shopping "></i></button>
-                <button class="hidden lg:flex h-[45px] py-3 px-8 btn border-nature-primary border-2 bg-transparent">Login</button>
+                <button
+                    class="hidden lg:flex h-[45px] py-3 px-8 btn border-nature-primary border-2 bg-transparent">Login</button>
                 <button class="hidden lg:flex h-[45px] py-3 px-8 btn bg-nature-primary text-white">Register</button>
 
                 <div class="dropdown dropdown-left">
@@ -93,12 +142,14 @@
         </div>
         <!-- Banner section -->
         <section>
-            <!-- <span class="text-nature-primary">You Can</span> <br>
-                    <span class="text-nature-primary">Count</span> -->
             <div class="flex flex-col justify-center items-center gap-6 lg:gap-8">
-                <h1 class="text-center text-3xl md:text-6xl font-semibold w-11/12 lg:w-1/2">Freshness <span class="text-nature-primary">You Can</span><br>
-                    <span class="text-nature-primary">Count</span> On, Prices You’ll Love!
-                </h1>
+                <!-- Animated text -->
+                <div>
+                    <div class="container">
+                        <div class="typed-out font-semibold text-3xl lg:text-6xl text-center">Freshness at <span class="text-nature-primary">Its Best</span></div>
+                    </div>
+                    <p class="font-semibold text-3xl lg:text-6xl text-center"><span class="text-nature-primary">Value</span> You Can <br> Trust!</p>
+                </div>
                 <p class="text-center text-xl text-[#111111]/80 w-11/12 lg:w-1/2">Shop your daily essentials at
                     unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
                 </p>
@@ -123,7 +174,8 @@
                     <div class="card-body items-center text-center">
                         <h2 class="text-xl md:text-2xl font-semibold">24/7 Services</h2>
                         <p class="text-[#111111]/70">
-                            We are always here to serve you, round the clock, 7 days a week. Whether it's day or night, your grocery needs are just a click away.
+                            We are always here to serve you, round the clock, 7 days a week. Whether it's day or night,
+                            your grocery needs are just a click away.
                         </p>
                     </div>
                 </div>
@@ -135,7 +187,8 @@
                     <div class="card-body items-center text-center">
                         <h2 class="text-xl md:text-2xl font-semibold">Fast Delivery</h2>
                         <p class="text-[#111111]/70">
-                            Enjoy the convenience of fast and reliable delivery straight to your doorstep. We ensure your order reaches you in the shortest time possible.
+                            Enjoy the convenience of fast and reliable delivery straight to your doorstep. We ensure
+                            your order reaches you in the shortest time possible.
                         </p>
                     </div>
                 </div>
@@ -147,7 +200,8 @@
                     <div class="card-body items-center text-center">
                         <h2 class="text-xl md:text-2xl font-semibold">Healthy Products </h2>
                         <p class="text-[#111111]/70">
-                            Choose from a wide variety of fresh, nutritious, and organic products. We care about your health, offering you only the best in quality.
+                            Choose from a wide variety of fresh, nutritious, and organic products. We care about your
+                            health, offering you only the best in quality.
                         </p>
                     </div>
                 </div>
@@ -163,7 +217,8 @@
                     <div class="card bg-gradient-to-br from-[#53DB3A] to-white rounded-xl">
                         <div class="card-body pb-0">
                             <h2 class="text-4xl font-semibold font-poppins text-white mb-5">30% off</h2>
-                            <p class="text-black mb-5">Save 30% on selected popular products! Click to grab the best deals while they last!
+                            <p class="text-black mb-5">Save 30% on selected popular products! Click to grab the best
+                                deals while they last!
                             </p>
                             <div class="card-actions">
                                 <button class="btn bg-white border-none rounded-lg text-xl text-black font-normal">Buy
@@ -330,7 +385,8 @@
                         </div>
                     </div>
                     <p class="text-[#111111]/70 mb-8">
-                        Great experience! The delivery was super quick, and the quality of products exceeded my expectations!
+                        Great experience! The delivery was super quick, and the quality of products exceeded my
+                        expectations!
                     </p>
                     <div class="rating flex gap-2">
                         <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" disabled />
@@ -356,7 +412,8 @@
                         </div>
                     </div>
                     <p class="text-[#111111]/70 mb-8">
-                        Love the variety and freshness! I always find everything I need here. Highly recommend for quality groceries!
+                        Love the variety and freshness! I always find everything I need here. Highly recommend for
+                        quality groceries!
                     </p>
                     <div class="rating flex gap-2">
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
@@ -455,7 +512,8 @@
                             <h1 class="text-4xl font-semibold text-nature-primary lg:text-nature-text">Get Grocery News!
                             </h1>
                             <p class="py-6">
-                                Subscribe to our newsletter for the latest deals, <br> new arrivals, and exclusive offers!
+                                Subscribe to our newsletter for the latest deals, <br> new arrivals, and exclusive
+                                offers!
                             </p>
                             <label class="input  flex items-center gap-2 border-none mb-8">
                                 <input type="text" class="grow " placeholder="Enter email...." />
